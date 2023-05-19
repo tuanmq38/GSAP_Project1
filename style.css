@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+.navbar span {
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, #fff);
+  /* animation: animate 5s infinite linear; */
+}
+
+@keyframes animate {
+  0% {
+    left: 0;
+    transform: translate(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translate(100%);
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(red, green, blue, 0.1);
+}
+
+.btn {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.6rem;
+}
+
+.video-section video {
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* SECTION BOX 1 */
+
+.section{
+    background-color: #212121;
+    padding: 7rem;
+}
+
+.boxes-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.columns{
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.col img{
+    object-fit: cover;
+}
+
+
+.col-1{
+    display: flex;
+    gap: 1.5rem;
+    flex: 5;
+}
+.box1 .col-1 img:first-child{
+    width: 170px;
+    height: 240px;
+    transform: translateY(-50px);
+}
+
+.box1 .col-1 img:nth-child(2){
+    width: 470px;
+    height: 500px;
+}
+
+.col-3{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    flex: 4;
+}
+
+.box1 .col-3 img:first-child{
+    width: 400px;
+    height: 200px;
+
+}
+
+.box1 .col-3 img:nth-child(2){
+    width: 180px;
+}
+.box1 .col-3 img:nth-child(3){
+    width: 240px;
+    height: 220px;
+}
+
+.col-2{
+    margin: auto;
+    flex: 1.5;
+    padding-top: 150px;
+}
+
+.col-2 h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 115px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 10px; /*NOTE - Headline padding*/
+    left: 47.5%;
+    z-index: 100;
+}
+
+.box1 .col-2 h1{
+    top: 0;    
+}
+
+
+.col-2 span{
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: .7;
+}
+
+
+.line{
+    height: 1px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, .1);
+    margin: 2rem 0;
+}
+
+.text-box p{
+    font-size: 15px;
+    line-height: 1.9;
+    padding-bottom: 1rem;
+    opacity: .7;
+    
+}
+
+/* SECTION BOX 2 */
+.box2 .col-1 img:first-child {
+  width: 200px;
+  height: 250px;
+  transform: translateY(75px);
+}
+
+.box2 .col-1 img:nth-child(2) {
+  height: 380px;
+  width: 300px;
+}
+
+.box2 .col-3 img:nth-child(1) {
+  height: 300px;
+  width: 200px;
+}
+
+.box2 .col-3 img:nth-child(2) {
+  width: 180px;
+  height: 200px;
+  transform: translateY(50px);
+}
+
+.box2 .col-3 img:nth-child(3) {
+  width: 380px;
+  height: 200px;
+}
+
+/* SECTION BOX 3 */
+
+.box3 .col-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box3 .col-1 img:first-child {
+  width: 200px;
+  height: 280px;
+  transform: translatex(30px);
+}
+
+.box3 .col-1 img:nth-child(2) {
+  width: 180px;
+  height: 200px;
+  margin-left: 80px;
+  align-self: center;
+}
+
+.box3 .col-1 img:nth-child(3) {
+  width: 280px;
+  height: 180px;
+}
+
+.box3 .col-1 img:nth-child(4) {
+  width: 250px;
+  height: 180px;
+  transform: translateY(-30px);
+
+} 
+
+.box3 .col-3 img {
+  width: 400px;
+  height: auto;
+}
+
+/* SECTION FOOTER */
+
+footer {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
